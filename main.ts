@@ -51,7 +51,7 @@ makerbit.onIrButton(IrButton.NUM1, IrButtonAction.Pressed, function () {
         `)
     basic.pause(500)
     basic.showLeds(`
-        # # # . #
+        # # # # #
         # . . . .
         # # # # #
         . . . . #
@@ -173,10 +173,35 @@ makerbit.onIrButton(IrButton.TRight, IrButtonAction.Pressed, function () {
     mbit_小车类.CarCtrl(mbit_小车类.CarState.Car_Stop)
 })
 makerbit.onIrButton(IrButton.NUM5, IrButtonAction.Pressed, function () {
-    basic.showNumber(5)
+    basic.showNumber(10)
+    for (let index = 0; index < 5; index++) {
+        mbit_小车类.RGB_Car_Big2(mbit_小车类.enColor.Red)
+        basic.pause(1000)
+        mbit_小车类.RGB_Car_Big2(mbit_小车类.enColor.Blue)
+        basic.pause(1000)
+    }
 })
 makerbit.onIrButton(IrButton.NUM4, IrButtonAction.Pressed, function () {
-    basic.showNumber(4)
+    for (let index = 0; index < 5; index++) {
+        basic.showNumber(4)
+        mbit_小车类.RGB_Car_Big2(mbit_小车类.enColor.OFF)
+        basic.pause(1000)
+        mbit_小车类.RGB_Car_Big2(mbit_小车类.enColor.Red)
+        basic.pause(1000)
+        mbit_小车类.RGB_Car_Big2(mbit_小车类.enColor.Green)
+        basic.pause(1000)
+        mbit_小车类.RGB_Car_Big2(mbit_小车类.enColor.Blue)
+        basic.pause(1000)
+        mbit_小车类.RGB_Car_Big2(mbit_小车类.enColor.White)
+        basic.pause(1000)
+        mbit_小车类.RGB_Car_Big2(mbit_小车类.enColor.Cyan)
+        basic.pause(1000)
+        mbit_小车类.RGB_Car_Big2(mbit_小车类.enColor.Pinkish)
+        basic.pause(1000)
+        mbit_小车类.RGB_Car_Big2(mbit_小车类.enColor.Yellow)
+        basic.pause(1000)
+        mbit_小车类.RGB_Car_Big2(mbit_小车类.enColor.Yellow)
+    }
 })
 makerbit.onIrButton(IrButton.Left, IrButtonAction.Pressed, function () {
     mbit_小车类.CarCtrlSpeed(mbit_小车类.CarState.Car_Left, 100)

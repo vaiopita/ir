@@ -82,7 +82,7 @@ makerbit.onIrButton(IrButton.NUM8, IrButtonAction.Pressed, function () {
 })
 makerbit.onIrButton(IrButton.Right, IrButtonAction.Pressed, function () {
     mbit_小车类.CarCtrlSpeed(mbit_小车类.CarState.Car_Right, 100)
-    basic.pause(1000)
+    basic.pause(500)
     mbit_小车类.CarCtrl(mbit_小车类.CarState.Car_Stop)
 })
 makerbit.onIrButton(IrButton.NUM6, IrButtonAction.Pressed, function () {
@@ -90,7 +90,7 @@ makerbit.onIrButton(IrButton.NUM6, IrButtonAction.Pressed, function () {
 })
 makerbit.onIrButton(IrButton.TRight, IrButtonAction.Pressed, function () {
     mbit_小车类.CarCtrlSpeed(mbit_小车类.CarState.Car_SpinRight, 100)
-    basic.pause(1000)
+    basic.pause(500)
     mbit_小车类.CarCtrl(mbit_小车类.CarState.Car_Stop)
 })
 makerbit.onIrButton(IrButton.NUM5, IrButtonAction.Pressed, function () {
@@ -101,7 +101,7 @@ makerbit.onIrButton(IrButton.NUM4, IrButtonAction.Pressed, function () {
 })
 makerbit.onIrButton(IrButton.Left, IrButtonAction.Pressed, function () {
     mbit_小车类.CarCtrlSpeed(mbit_小车类.CarState.Car_Left, 100)
-    basic.pause(1000)
+    basic.pause(500)
     mbit_小车类.CarCtrl(mbit_小车类.CarState.Car_Stop)
 })
 makerbit.onIrButton(IrButton.Minus, IrButtonAction.Pressed, function () {
@@ -109,17 +109,17 @@ makerbit.onIrButton(IrButton.Minus, IrButtonAction.Pressed, function () {
 })
 makerbit.onIrButton(IrButton.Up, IrButtonAction.Pressed, function () {
     mbit_小车类.CarCtrlSpeed(mbit_小车类.CarState.Car_Run, 100)
-    basic.pause(1000)
+    basic.pause(500)
     mbit_小车类.CarCtrl(mbit_小车类.CarState.Car_Stop)
 })
 makerbit.onIrButton(IrButton.TLeft, IrButtonAction.Pressed, function () {
     mbit_小车类.CarCtrlSpeed(mbit_小车类.CarState.Car_SpinLeft, 100)
-    basic.pause(1000)
+    basic.pause(500)
     mbit_小车类.CarCtrl(mbit_小车类.CarState.Car_Stop)
 })
 makerbit.onIrButton(IrButton.Down, IrButtonAction.Pressed, function () {
     mbit_小车类.CarCtrlSpeed(mbit_小车类.CarState.Car_Back, 100)
-    basic.pause(1000)
+    basic.pause(500)
     mbit_小车类.CarCtrl(mbit_小车类.CarState.Car_Stop)
 })
 makerbit.connectIrReceiver(DigitalPin.P8)

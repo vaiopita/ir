@@ -18,8 +18,6 @@ makerbit.onIrButton(IrButton.Light, IrButtonAction.Pressed, function () {
 })
 makerbit.onIrButton(IrButton.NUM1, IrButtonAction.Pressed, function () {
     basic.showNumber(1)
-})
-input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
         # # # # .
         # . . . #
@@ -60,10 +58,50 @@ input.onButtonPressed(Button.A, function () {
         # # # # #
         `)
     basic.pause(500)
-    basic.clearScreen()
 })
 makerbit.onIrButton(IrButton.NUM3, IrButtonAction.Pressed, function () {
     basic.showNumber(3)
+    basic.showLeds(`
+        # # # # #
+        . . # . .
+        . . # . .
+        . . # . .
+        . . # . .
+        `)
+    basic.pause(500)
+    basic.showLeds(`
+        # # # # .
+        # . . . #
+        # # # # #
+        # . . # .
+        # . . . #
+        `)
+    basic.pause(500)
+    basic.showLeds(`
+        . # # # .
+        # . . . #
+        # . . . #
+        # # # # #
+        # . . . #
+        `)
+    basic.pause(500)
+    basic.showLeds(`
+        # # # # #
+        # . . . .
+        # . . . .
+        # . . . .
+        # # # # #
+        `)
+    basic.pause(500)
+    basic.showLeds(`
+        # . . . #
+        . # . # .
+        . . # . .
+        . . # . .
+        . . # . .
+        `)
+    basic.pause(500)
+    basic.showIcon(IconNames.SmallHeart)
 })
 makerbit.onIrButton(IrButton.Power, IrButtonAction.Pressed, function () {
     mbit_小车类.RGB_Car_Big2(mbit_小车类.enColor.OFF)
@@ -76,6 +114,47 @@ makerbit.onIrButton(IrButton.NUM7, IrButtonAction.Pressed, function () {
 })
 makerbit.onIrButton(IrButton.NUM2, IrButtonAction.Pressed, function () {
     basic.showNumber(2)
+    basic.showLeds(`
+        # # # # #
+        # . . . #
+        # # # # #
+        # . . . .
+        # . . . .
+        `)
+    basic.pause(500)
+    basic.showLeds(`
+        # # # # #
+        # . . . .
+        # # # # #
+        # . . . .
+        # # # # #
+        `)
+    basic.pause(500)
+    basic.showLeds(`
+        # # # # #
+        . . # . .
+        . . # . .
+        . . # . .
+        . . # . .
+        `)
+    basic.pause(500)
+    basic.showLeds(`
+        # # # # #
+        # . . . .
+        # # # # #
+        # . . . .
+        # # # # #
+        `)
+    basic.pause(500)
+    basic.showLeds(`
+        # # # # .
+        # . . . #
+        # # # # #
+        # . . # .
+        # . . . #
+        `)
+    basic.pause(500)
+    basic.showIcon(IconNames.Yes)
 })
 makerbit.onIrButton(IrButton.NUM8, IrButtonAction.Pressed, function () {
     basic.showNumber(8)

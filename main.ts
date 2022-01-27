@@ -173,7 +173,7 @@ makerbit.onIrButton(IrButton.TRight, IrButtonAction.Pressed, function () {
     mbit_小车类.CarCtrl(mbit_小车类.CarState.Car_Stop)
 })
 makerbit.onIrButton(IrButton.NUM5, IrButtonAction.Pressed, function () {
-    basic.showNumber(10)
+    basic.showNumber(5)
     for (let index = 0; index < 5; index++) {
         mbit_小车类.RGB_Car_Big2(mbit_小车类.enColor.Red)
         basic.pause(1000)
@@ -182,7 +182,7 @@ makerbit.onIrButton(IrButton.NUM5, IrButtonAction.Pressed, function () {
     }
 })
 makerbit.onIrButton(IrButton.NUM4, IrButtonAction.Pressed, function () {
-    for (let index = 0; index < 5; index++) {
+    for (let index = 0; index < 1; index++) {
         basic.showNumber(4)
         mbit_小车类.RGB_Car_Big2(mbit_小车类.enColor.OFF)
         basic.pause(1000)
